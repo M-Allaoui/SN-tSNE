@@ -10,6 +10,10 @@ PSN-tSNE is an enhanced version of the t-SNE algorithm that introduces a novel m
 ## Visual Overview
 The figure below illustrates the comparison of PN-tSNE's convergence speed against other embedding techniques.
 
-![SN-tSNE Interpretibility](Olivetti face indevidual 1.png, Olivetti face indevidual 2.png, Olivetti face indevidual 3.png, Olivetti face indevidual 4.png,Olivetti face indevidual 5.png)
+![SN-tSNE Interpretibility](Olivetti face indevidual 1.png)
+![SN-tSNE Interpretibility](Olivetti face indevidual 2.png)
+![SN-tSNE Interpretibility](Olivetti face indevidual 3.png)
+![SN-tSNE Interpretibility](Olivetti face indevidual 4.png)
+![SN-tSNE Interpretibility](Olivetti face indevidual 5.png)
 
 *Figure: Visualization of Olivetti face samples reconstructed from NMF, t-SNE, and SN-tSNE embeddings.*
