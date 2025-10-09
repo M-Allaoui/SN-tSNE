@@ -1,11 +1,11 @@
-# 🧭 SN-tSNE: Semi-Non-Negative t-SNE
+# SN-tSNE: Semi-Non-Negative t-SNE
 
 **SN-tSNE** is a novel variant of *t-distributed Stochastic Neighbor Embedding (t-SNE)* that introduces **semi-non-negativity constraints** and a **multiplicative update rule (MUR)** to improve convergence stability, embedding interpretability, and cluster compactness.  
 By enforcing non-negative coordinates in the low-dimensional space, SN-tSNE enhances geometric clarity while preserving the local-to-global structure balance of classic t-SNE.
 
 ---
 
-## 📄 Published Paper
+## Published Paper
 If you are interested in the detailed theoretical formulation and experimental validation, read our paper in **Knowledge-Based Systems (Elsevier)**:  
 👉 **[Exploring Non-Negativity for Improved Manifold Embedding: Application to t-SNE](https://doi.org/10.1016/j.knosys.2025.114547)**
 
@@ -36,7 +36,9 @@ You can replace digits with other datasets such as isolet, coil20, fashion_mnist
 Results and plots will be automatically saved in the specified output path.
 
 ## Visual Overview
+
 Below is some qualitative results.
+
 ![SN-tSNE Interpretibility1](https://github.com/M-Allaoui/SN-tSNE/blob/95928f61200f91ae956a0b150e3528c22592a500/MLP/Olivetti%20sample%201.png)
 ![SN-tSNE Interpretibility2](https://github.com/M-Allaoui/SN-tSNE/blob/95928f61200f91ae956a0b150e3528c22592a500/MLP/Olivetti%20sample%202.png)
 ![SN-tSNE Interpretibility3](https://github.com/M-Allaoui/SN-tSNE/blob/95928f61200f91ae956a0b150e3528c22592a500/MLP/Olivetti%20sample%203.png)
