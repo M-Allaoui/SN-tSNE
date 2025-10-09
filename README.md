@@ -37,7 +37,7 @@ Results and plots will be automatically saved in the specified output path.
 
 ## Visual Overview
 
-Below is some qualitative results.
+Below are some qualitative results.
 
 ![SN-tSNE Interpretibility1](https://github.com/M-Allaoui/SN-tSNE/blob/95928f61200f91ae956a0b150e3528c22592a500/MLP/Olivetti%20sample%201.png)
 ![SN-tSNE Interpretibility2](https://github.com/M-Allaoui/SN-tSNE/blob/95928f61200f91ae956a0b150e3528c22592a500/MLP/Olivetti%20sample%202.png)
