@@ -1,0 +1,23 @@
+NMF MSE: 0.0037, for image i= 1
+t-SNE Reconstruction MSE: 0.0119, for image i= 1
+PN-tSNE Reconstruction MSE: 0.0028, for image i= 1
+
+NMF MSE: 0.0047, for image i= 62
+t-SNE Reconstruction MSE: 0.0076, for image i= 62
+PN-tSNE Reconstruction MSE: 0.0020, for image i= 62
+
+NMF MSE: 0.0033, for image i= 71
+t-SNE Reconstruction MSE: 0.0053, for image i= 71
+PN-tSNE Reconstruction MSE: 0.0018, for image i= 71
+
+NMF MSE: 0.0023, for image i= 214
+t-SNE Reconstruction MSE: 0.0088, for image i= 214
+SN-tSNE Reconstruction MSE: 0.0010, for image i= 214
+
+NMF MSE: 0.0026, for image i= 361
+t-SNE Reconstruction MSE: 0.0049, for image i= 361
+PN-tSNE Reconstruction MSE: 0.0009, for image i= 361
+
+NMF MSE: 0.0028, for image i= 361
+t-SNE Reconstruction MSE: 0.0085, for image i= 361
+PN-tSNE Reconstruction MSE: 0.0023, for image i= 361
