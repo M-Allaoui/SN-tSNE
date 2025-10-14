@@ -9,7 +9,7 @@ By enforcing non-negative coordinates in the low-dimensional space, SN-tSNE enha
 If you are interested in the detailed theoretical formulation and experimental validation, read our paper in **Knowledge-Based Systems (Elsevier)**:  
 👉 **[Exploring Non-Negativity for Improved Manifold Embedding: Application to t-SNE](https://doi.org/10.1016/j.knosys.2025.114547)**
 
-You can also check out the [C implementation (coming soon)]().
+You can also check out the [C implementation](https://github.com/M-Allaoui/SN-tSNE_c_Implementation.git).
 
 ---
 
