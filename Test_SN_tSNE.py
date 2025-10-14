@@ -22,13 +22,11 @@ def main():
                         help="Dataset name to load.")
     parser.add_argument("--data-root", type=str, default="Datasets",
                         help="Root directory containing datasets.")
-    parser.add_argument("--usps-path", type=str, default=None,
-                        help="Path to USPS HDF5 file (required if dataset=usps_h5).")
-    parser.add_argument("--perplexity", type=float, default=10.0,
+    parser.add_argument("--perplexity", type=float, default=3.0,
                         help="t-SNE perplexity value.")
-    parser.add_argument("--n-iter", type=int, default=200,
+    parser.add_argument("--n-iter", type=int, default=150,
                         help="Number of optimization iterations.")
-    parser.add_argument("--learning-rate", type=float, default=1.0,
+    parser.add_argument("--learning-rate", type=float, default=200,
                         help="Learning rate for t-SNE optimization.")
     parser.add_argument("--plot-out", type=str, default=None,
                         help="File path to save output plot (PNG).")
@@ -52,8 +50,7 @@ def main():
         n_components=2,
         perplexity=args.perplexity,
         n_iter=args.n_iter,
-        learning_rate=args.learning_rate,
-        #learning_rate='auto',
+        early_exaggeration=12.0,
         init='pca',
         random_state=42,
         verbose=1
@@ -72,8 +69,10 @@ def main():
 
     # --- K-Means Clustering Evaluation ---
     n_clusters = len(np.unique(y))
-    kmeans = cluster.KMeans(n_clusters=n_clusters)#, n_init=10
-    y_pred = kmeans.fit_predict(embedding)
+    std = embedding.std(axis=0, keepdims=True) + 1e-8  # NEW
+    embedding_km = embedding / std  # NEW
+    kmeans = cluster.KMeans(n_clusters=n_clusters, n_init=50, random_state=42)
+    y_pred = kmeans.fit_predict(embedding_km)
 
     print("\nK-Means Clustering Results:")
     print(f"  Accuracy     = {Accuracy(y, y_pred):.4f}")
